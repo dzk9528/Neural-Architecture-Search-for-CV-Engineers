@@ -22,6 +22,11 @@ After we define the search space, it is important to **find the optimal architec
 
 The details for different search strategy will be written in different files in the **TODO**
 
+### Evaluation
+- **Evaluation During NAS**: During the search process, there is an evaluation process for current architecture to generate a metric which is reported to the NAS system to decide how good this architecture is. 
+
+- **Final Architecture Evaluation**: When the search ended, there will be another round of final full evaluation with the optimal NN architecture during the search. 
+
 ## Basic Type of NAS
 ### Multi Trial NAS
 - **Search Space**: Different body part choices of a neural network, could be blocks type choice, layer parameters choice, or number of layers.
