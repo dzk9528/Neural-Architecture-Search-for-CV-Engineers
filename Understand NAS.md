@@ -31,7 +31,7 @@ The details for different search strategy will be written in different files in 
     - **Grid Search**
     - **Evolution Search**
     - **Policy Based RL Search**
-- **Total Search Efficiency**: The total time(*T*) is depending on the number of trials(*N*), the time for single trial and max concurrency(*C*)
+- **Total Search Efficiency**: The total time(*T*) is depending on the number of trials(*N*), the time for single trial(*t*) and max concurrency(*C*)
   - In general, *T = N * t / C*
 ### One Shot NAS
 **TODO**
