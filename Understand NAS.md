@@ -29,7 +29,7 @@ The details for different search strategy will be written in different files in 
 
 ## Basic Type of NAS
 ### Multi Trial NAS
-- **Search Space**: Different body part choices of a neural network, could be blocks type choice, layer parameters choice, or number of layers.
+- **Search Space**: Different body part choices of a neural network, could be blocks type choice, layer parameters choice, or number of layers. For each trial, it will generate a different model and evaluate from that.[1]
 - **Search Strategy**: Because each trial is independent, after some random sampled architecture is searched and evaluated, the optimization methods will choose the architecture with the best metrics and resample from there as a starting points.
   - Possible Search Strategy:
     - **Random Search**
@@ -39,11 +39,18 @@ The details for different search strategy will be written in different files in 
 - **Total Search Efficiency**: The total time(*T*) is depending on the number of trials(*N*), the time for single trial(*t*) and max concurrency(*C*)
   - In general, *T = N * t / C*
 ### One Shot NAS
-**TODO**
+- **Search Space**: Most One Shot NAS exists one super model and the search space. The search space is the sub model space of the super model which contains different operators in the suprt model[2]
+- **Search Strategy**: For we have a super model and try to search the sub space, most optimization method is based on graph optimization.
+  - **TODO: Introduce different search strategies**
+- **Total Search Efficiency**: With different optimization methods, it is hard to compute the exact efficiency but generally it is said to be more efficient than Multi Trial NAS for the total time for achieving the similar performance for the final architecture(See [3] to peek the interesting efficiency)
 ## Pros and Cons of NAS
 ### Advantage
 **TODO**
 ### Disadvantage
 **TODO**
 ## Reference
-- Ren, P., Xiao, Y., Chang, X., Huang, P. Y., Li, Z., Chen, X., & Wang, X. (2021). *A comprehensive survey of neural architecture search: Challenges and solutions.* ACM Computing Surveys (CSUR), 54(4), 1-34.
+[1] Ren, P., Xiao, Y., Chang, X., Huang, P. Y., Li, Z., Chen, X., & Wang, X. (2021). *A comprehensive survey of neural architecture search: Challenges and solutions.* ACM Computing Surveys (CSUR), 54(4), 1-34.
+
+[2] Xiao, Y., Qiu, Y., & Li, X. (2020, February). *A survey on one-shot neural architecture search.* In IOP Conference Series: Materials Science and Engineering (Vol. 750, No. 1, p. 012223). IOP Publishing.
+
+[3] Liu, H., Simonyan, K., & Yang, Y. (2018). *Darts: Differentiable architecture search.* arXiv preprint arXiv:1806.09055.
