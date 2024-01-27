@@ -48,6 +48,9 @@ The details for different search strategy will be written in different files in 
 **TODO**
 ### Disadvantage
 **TODO**
+
+## CheckList
+- This is important for anyone who want to develop NAS related project, it contains a lot of relative questions: https://www.automl.org/wp-content/uploads/NAS/NAS_checklist.pdf
 ## Reference
 [1] Ren, P., Xiao, Y., Chang, X., Huang, P. Y., Li, Z., Chen, X., & Wang, X. (2021). *A comprehensive survey of neural architecture search: Challenges and solutions.* ACM Computing Surveys (CSUR), 54(4), 1-34.
 
