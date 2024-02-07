@@ -45,9 +45,20 @@ The details for different search strategy will be written in different files in 
 - **Total Search Efficiency**: With different optimization methods, it is hard to compute the exact efficiency but generally it is said to be more efficient than Multi Trial NAS for the total time for achieving the similar performance for the final architecture(See [3] to peek the interesting efficiency)
 ## Pros and Cons of NAS
 ### Advantage
-**TODO**
+
+- **Automate Machine Learning Software Development**: It can automate the process of choosing and testing architectures with built in optimization and evaluation methods
+  
+- **Constrain Aware Searching**: It is simple to obtain faster inference times and increased accuracy or with other constraints(Such as plateform and number of parameters)
+  
+- **More Software Development more efficient**: Reduce the time-consuming, iterative process of bringing deep learning models into production.
+
 ### Disadvantage
-**TODO**
+
+- **Huge Power Consumption**: Because finding the optimal model can take many days and a significant amount of processing power, NAS approaches are computationally expensive.
+
+- **Architecture Validness**: The offline data is used to train NAS models. Estimating their performance on real data structures can be challenging.
+
+- **Long Searching Time**: Some models can take a long time to identify the optimal architecture, even though newer models operate significantly faster than previous models. 
 
 ## CheckList
 - This is important for anyone who want to develop NAS related project, it contains a lot of relative questions: https://www.automl.org/wp-content/uploads/NAS/NAS_checklist.pdf
@@ -57,3 +68,5 @@ The details for different search strategy will be written in different files in 
 [2] Xiao, Y., Qiu, Y., & Li, X. (2020, February). *A survey on one-shot neural architecture search.* In IOP Conference Series: Materials Science and Engineering (Vol. 750, No. 1, p. 012223). IOP Publishing.
 
 [3] Liu, H., Simonyan, K., & Yang, Y. (2018). *Darts: Differentiable architecture search.* arXiv preprint arXiv:1806.09055.
+
+[4] https://deci.ai/neural-architecture-search/#/
