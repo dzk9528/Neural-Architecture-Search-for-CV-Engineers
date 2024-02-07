@@ -32,10 +32,10 @@ The details for different search strategy will be written in different files in 
 - **Search Space**: Different body part choices of a neural network, could be blocks type choice, layer parameters choice, or number of layers. For each trial, it will generate a different model and evaluate from that.[1]
 - **Search Strategy**: Because each trial is independent, after some random sampled architecture is searched and evaluated, the optimization methods will choose the architecture with the best metrics and resample from there as a starting points.
   - Possible Search Strategy:
-    - **Random Search**
-    - **Grid Search**
-    - **Evolution Search**
-    - **Policy Based RL Search**
+    - **Random Search**: Randomly pick one the the architecture 
+    - **Grid Search**: During the search, all possible architecture is searched and evaluated
+    - **Evolution Search**: **TODO**
+    - **Policy Based RL Search**: **TODO**
 - **Total Search Efficiency**: The total time(*T*) is depending on the number of trials(*N*), the time for single trial(*t*) and max concurrency(*C*)
   - In general, *T = N * t / C*
 ### One Shot NAS
